@@ -30,9 +30,6 @@ engine.setProperty('voice', voices[1].id)
 def talk(text):
     engine.say(text)
     engine.runAndWait()
-    wikipedia.summary(person, 1)
-    print (info)
-    talk(info) 
 def take_command():
     try:
         with sr.Microphone() as source:
